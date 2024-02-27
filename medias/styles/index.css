@@ -1,0 +1,51 @@
+/* Style Guide */
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+}
+html {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  font-family: Poppins;
+}
+a {
+  font-weight: 700;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 3rem;
+  padding-block: 0.7rem;
+}
+.header__logo {
+  height: 1rem;
+}
+.header__button {
+  padding: 0.4rem;
+  padding-inline: 2rem;
+  border-radius: 1rem;
+  background-color: red;
+}
+/* Main */
+.main {
+  background-image: url(../img/bg_hero_desktop.svg);
+  display: flex;
+}
+.main__firstParagraph {
+  align-items: center;
+  height: 100%;
+}
+.main__illustration {
+  width: 60vw;
+}
+/* Section */
