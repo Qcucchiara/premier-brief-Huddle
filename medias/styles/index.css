@@ -1,8 +1,9 @@
-/* Style Guide */
+/* Style Guide________________________________________________________ */
 * {
   padding: 0;
   margin: 0;
   font-weight: 400;
+  text-decoration: none;
 }
 html {
   font-size: 18px;
@@ -19,7 +20,7 @@ h6 {
 a {
   font-weight: 700;
 }
-/* Header */
+/* Header____________________________________________________________ */
 .header {
   display: flex;
   justify-content: space-between;
@@ -36,7 +37,7 @@ a {
   border-radius: 1rem;
   background-color: red;
 }
-/* Main */
+/* Main_____________________________________________________________ */
 .main {
   background-image: url(../img/bg_hero_desktop.svg);
   background-position-y: -2rem;
@@ -52,8 +53,126 @@ a {
 .main__illustration {
   width: 60vw;
 }
-/* Section */
+/* Section________________________________________________________ */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* Aside */
+/* section__premier block */
+.section__first--block {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-template-rows: 4fr 6fr;
+  grid-template-areas:
+    "titre image"
+    "content image";
+  box-shadow: 0 0 20px -15px;
+  width: 80vw;
+  padding: 2rem;
+  padding-left: 6vw;
+  margin: 2rem;
+}
+.section__first--block__title {
+  grid-area: titre;
+  align-self: end;
+}
+.section__first--block__paragraph {
+  grid-area: content;
+}
+.section__first--block__illustration {
+  grid-area: image;
+  height: 50vh;
+}
 
-/* footer */
+/* Section__second block */
+.section__second--block {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-template-rows: 4fr 6fr;
+  grid-template-areas:
+    "image titre"
+    "image content";
+  box-shadow: 0 0 20px -15px;
+  width: 80vw;
+  padding: 2rem;
+  padding-left: 6vw;
+  margin: 2rem;
+}
+.section__second--block__title {
+  grid-area: titre;
+  align-self: end;
+}
+.section__second--block__paragraph {
+  grid-area: content;
+}
+.section__second--block__illustration {
+  grid-area: image;
+  height: 50vh;
+  padding-right: 6vw;
+}
+
+/* section__troisième block */
+.section__third--block {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-template-rows: 4fr 6fr;
+  grid-template-areas:
+    "titre image"
+    "content image";
+  box-shadow: 0 0 20px -15px;
+  width: 80vw;
+  padding: 2rem;
+  padding-left: 6vw;
+  margin: 2rem;
+}
+.section__third--block__title {
+  grid-area: titre;
+  align-self: end;
+}
+.section__third--block__paragraph {
+  grid-area: content;
+}
+.section__third--block__illustration {
+  grid-area: image;
+  height: 50vh;
+}
+
+/* Aside_____________________________________________________ */
+
+/* footer____________________________________________________ */
+.footer {
+  display: grid;
+  grid-template-columns: 4fr 4fr 2fr;
+  grid-template-rows: 5fr 3fr 2fr;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "logo . ."
+    "contacts nav social"
+    ". . copyrights";
+  color: white;
+  background-color: hsl(192, 100%, 9%);
+  padding-inline: 6rem;
+}
+.footer__logo {
+  grid-area: logo;
+  align-self: end;
+}
+.footer__contacts {
+  grid-area: contacts;
+}
+.footer__nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer__nav li {
+  list-style: none;
+}
+.footer__social {
+  grid-area: social;
+}
+.footer__copyrights {
+  grid-area: copyrights;
+}
