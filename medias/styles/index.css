@@ -39,13 +39,21 @@ a {
 /* Main */
 .main {
   background-image: url(../img/bg_hero_desktop.svg);
+  background-position-y: -2rem;
   display: flex;
+  padding-inline: 2rem;
 }
 .main__firstParagraph {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 100%;
+  justify-content: center;
 }
 .main__illustration {
   width: 60vw;
 }
 /* Section */
+
+/* Aside */
+
+/* footer */
