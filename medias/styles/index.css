@@ -1,42 +1,68 @@
-header {
-  width: 1250px;
-  margin: 0;
-  padding: 0;
-  background-color: blue;
-  position: relative;
+/*HEADER*/
+
+.header {
   display: flex;
   justify-content: space-between;
+  padding-inline: -5rem;
+  margin: 30px;
 }
-
-header a {
-  background-color: chocolate;
-  color: white;
-  text-align: center;
-  border: 1px solid chocolate;
+.header__logo {
+  height: 1rem;
+}
+.header__button {
+  padding: 0.4rem;
+  padding-inline: 2rem;
+  background-color: white;
+  color: black;
   width: 150px;
-  height: 25px;
-  margin-top: 8px;
-  margin-right: 10px;
-  margin-bottom: 8px;
-  border-radius: 15px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  box-shadow: 29px 29px 58px #b8b8b8, -29px -29px 58px #ffffff;
 }
 
-img {
-  width: 100px;
-  margin: 10px 10px;
+/*MAIN*/
+body {
+  background-image: url(../img/bg_hero_desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 50px;
 }
-main a {
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main__firstParagraph__title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman";
+  font-size: xx-large;
+  margin-top: 60px;
+}
+
+.main__firstParagraph__bouton {
+  display: inline-block;
+  width: 180px;
+  height: 30px;
   background-color: fuchsia;
   color: white;
+  border: 1px solid fuchsia;
+  border-radius: 25px;
   text-align: center;
-  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 24px;
+  margin-left: 4px;
 }
+.main__firstParagraph__paragraph {
+  margin: 10px;
+}
+.main__illustration {
+  width: 48vw;
+}
+
 /* Style Guide */
-* {
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
-}
+
 html {
   font-size: 18px;
 }
@@ -52,23 +78,7 @@ h6 {
 a {
   font-weight: 700;
 }
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 3rem;
-  padding-block: 0.7rem;
-}
-.header__logo {
-  height: 1rem;
-}
-.header__button {
-  padding: 0.4rem;
-  padding-inline: 2rem;
-  border-radius: 1rem;
-  background-color: red;
-}
+
 /* Main */
 .main {
   background-image: url(../img/bg_hero_desktop.svg);
