@@ -1,3 +1,4 @@
+
 /* Style Guide________________________________________________________ */
 * {
   padding: 0;
@@ -5,6 +6,15 @@
   font-weight: 400;
   text-decoration: none;
 }
+.main__firstParagraph__paragraph {
+  margin: 10px;
+}
+.main__illustration {
+  width: 48vw;
+}
+
+/* Style Guide */
+
 html {
   font-size: 18px;
 }
