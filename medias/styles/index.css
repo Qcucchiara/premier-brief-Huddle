@@ -1,12 +1,12 @@
 /* Style Guide________________________________________________________ */
 * {
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
-  text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    text-decoration: none;
 }
 html {
-  font-size: 18px;
+    font-size: 18px;
 }
 h1,
 h2,
@@ -14,39 +14,39 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
-  font-family: Poppins;
+    font-weight: 600;
+    font-family: Poppins;
 }
 a {
-  font-weight: 700;
+    font-weight: 700;
 }
 /* Header____________________________________________________________ */
 body {
-  background-image: url(../img/bg_hero_desktop.svg);
-  background-repeat: no-repeat;
-  background-position: top;
-  padding: 50px; /* a changer */
+    background-image: url(../img/bg_hero_desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    /* padding: 50px; a changer */
 }
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding-inline: -5rem;
-  margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: -5rem;
+    margin: 30px;
 }
 .header__logo {
-  height: 1rem;
+    height: 1rem;
 }
 .header__button {
-  padding: 0.4rem;
-  padding-inline: 2rem;
-  background-color: white;
-  color: black;
-  width: 150px;
-  height: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 1rem;
-  box-shadow: 29px 29px 58px #b8b8b8, -29px -29px 58px #ffffff;
+    padding: 0.4rem;
+    padding-inline: 2rem;
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    box-shadow: 29px 29px 58px #b8b8b8, -29px -29px 58px #ffffff;
 }
 
 /* .header {
@@ -67,34 +67,34 @@ body {
 } */
 /* Main_____________________________________________________________ */
 main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .main__firstParagraph__title {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman";
-  font-size: xx-large;
-  margin-top: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    font-size: xx-large;
+    margin-top: 60px;
 }
 .main__firstParagraph__paragraph {
-  margin: 10px;
+    margin: 10px;
 }
 .main__firstParagraph__bouton {
-  display: inline-block;
-  width: 180px;
-  height: 30px;
-  background-color: fuchsia;
-  color: white;
-  border: 1px solid fuchsia;
-  border-radius: 25px;
-  text-align: center;
-  text-decoration: none;
-  margin-top: 24px;
-  margin-left: 4px;
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    background-color: fuchsia;
+    color: white;
+    border: 1px solid fuchsia;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 24px;
+    margin-left: 4px;
 }
 .main__illustration {
-  width: 48vw;
+    width: 48vw;
 }
 /* .main {
   background-image: url(../img/bg_hero_desktop.svg);
@@ -113,124 +113,170 @@ main {
 } */
 /* Section________________________________________________________ */
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* section__premier block */
 .section__first--block {
-  display: grid;
-  grid-template-columns: 6fr 4fr;
-  grid-template-rows: 4fr 6fr;
-  grid-template-areas:
-    "titre image"
-    "content image";
-  box-shadow: 0 0 20px -15px;
-  width: 80vw;
-  padding: 2rem;
-  padding-left: 6vw;
-  margin: 2rem;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 4fr 6fr;
+    grid-template-areas:
+        'titre image'
+        'content image';
+    box-shadow: 0 0 20px -15px;
+    width: 80vw;
+    padding: 2rem;
+    padding-left: 6vw;
+    margin: 2rem;
 }
 .section__first--block__title {
-  grid-area: titre;
-  align-self: end;
+    grid-area: titre;
+    align-self: end;
 }
 .section__first--block__paragraph {
-  grid-area: content;
+    grid-area: content;
 }
 .section__first--block__illustration {
-  grid-area: image;
-  height: 50vh;
+    grid-area: image;
+    height: 50vh;
 }
 
 /* Section__second block */
 .section__second--block {
-  display: grid;
-  grid-template-columns: 4fr 6fr;
-  grid-template-rows: 4fr 6fr;
-  grid-template-areas:
-    "image titre"
-    "image content";
-  box-shadow: 0 0 20px -15px;
-  width: 80vw;
-  padding: 2rem;
-  padding-left: 6vw;
-  margin: 2rem;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 4fr 6fr;
+    grid-template-areas:
+        'image titre'
+        'image content';
+    box-shadow: 0 0 20px -15px;
+    width: 80vw;
+    padding: 2rem;
+    padding-left: 6vw;
+    margin: 2rem;
 }
 .section__second--block__title {
-  grid-area: titre;
-  align-self: end;
+    grid-area: titre;
+    align-self: end;
 }
 .section__second--block__paragraph {
-  grid-area: content;
+    grid-area: content;
 }
 .section__second--block__illustration {
-  grid-area: image;
-  height: 50vh;
-  padding-right: 6vw;
+    grid-area: image;
+    height: 50vh;
+    padding-right: 6vw;
 }
 
 /* section__troisième block */
 .section__third--block {
-  display: grid;
-  grid-template-columns: 6fr 4fr;
-  grid-template-rows: 4fr 6fr;
-  grid-template-areas:
-    "titre image"
-    "content image";
-  box-shadow: 0 0 20px -15px;
-  width: 80vw;
-  padding: 2rem;
-  padding-left: 6vw;
-  margin: 2rem;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 4fr 6fr;
+    grid-template-areas:
+        'titre image'
+        'content image';
+    box-shadow: 0 0 20px -15px;
+    width: 80vw;
+    padding: 2rem;
+    padding-left: 6vw;
+    margin: 2rem;
 }
 .section__third--block__title {
-  grid-area: titre;
-  align-self: end;
+    grid-area: titre;
+    align-self: end;
 }
 .section__third--block__paragraph {
-  grid-area: content;
+    grid-area: content;
 }
 .section__third--block__illustration {
-  grid-area: image;
-  height: 50vh;
+    grid-area: image;
+    height: 50vh;
 }
 
 /* Aside_____________________________________________________ */
+.aside {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 40%;
+    height: 10rem;
+    margin-inline: 30vw;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 20px -15px;
+}
+.aside--title {
+    font-size: large;
+}
+.aside__button {
+    background-color: fuchsia;
+    padding: 0.8rem;
+    padding-inline: 2.5rem;
+    border-radius: 2rem;
+    color: white;
+}
 
 /* footer____________________________________________________ */
 .footer {
-  display: grid;
-  grid-template-columns: 4fr 4fr 2fr;
-  grid-template-rows: 5fr 3fr 2fr;
-  grid-auto-flow: column;
-  grid-template-areas:
-    "logo . ."
-    "contacts nav social"
-    ". . copyrights";
-  color: white;
-  background-color: hsl(192, 100%, 9%);
-  padding-inline: 6rem;
+    display: grid;
+    position: relative;
+    grid-template-columns: 4fr 4fr 2fr;
+    grid-template-rows: 5fr 3fr 2fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+        'logo . .'
+        'contacts nav social'
+        '. . copyrights';
+    color: white;
+    background-color: hsl(192, 100%, 9%);
+    height: 50vh;
+    padding-left: 5rem;
 }
 .footer__logo {
-  grid-area: logo;
-  align-self: end;
+    grid-area: logo;
+    align-self: center;
+
+    height: 3rem;
 }
 .footer__contacts {
-  grid-area: contacts;
+    grid-area: contacts;
+    padding-left: 3rem;
+    a {
+        color: #ffffff;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 }
 .footer__nav {
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    a {
+        color: #ffffff;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 }
 .footer__nav li {
-  list-style: none;
+    list-style: none;
 }
 .footer__social {
-  grid-area: social;
+    grid-area: social;
 }
 .footer__copyrights {
-  grid-area: copyrights;
+    grid-area: copyrights;
+    display: flex;
+    align-self: self-end;
+    margin-left: -2rem;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
 }
