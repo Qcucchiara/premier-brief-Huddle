@@ -240,7 +240,6 @@ main {
 .footer__logo {
     grid-area: logo;
     align-self: center;
-
     height: 3rem;
 }
 .footer__contacts {
@@ -252,6 +251,15 @@ main {
     a:hover {
         text-decoration: underline;
     }
+}
+.footer__contacts__adress {
+    list-style: url(../img/icon_location.svg);
+}
+.footer__contacts__telephone {
+    list-style: url(../img/icon_phone.svg);
+}
+.footer__contacts__mail {
+    list-style: url(../img/icon_email.svg);
 }
 .footer__nav {
     grid-area: nav;
@@ -269,6 +277,15 @@ main {
 }
 .footer__social {
     grid-area: social;
+}
+.footer__social__facebook {
+    border: 1px solid white;
+    color: white;
+    border-radius: 10rem;
+    text-align: center;
+    align-self: center;
+    position: relative;
+    width: 2rem;
 }
 .footer__copyrights {
     grid-area: copyrights;
