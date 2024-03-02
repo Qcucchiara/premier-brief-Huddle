@@ -209,6 +209,9 @@ main {
     justify-content: space-around;
     border-radius: 0.8rem;
     box-shadow: 0 0 20px -15px;
+    position: relative;
+    top: 5rem;
+    z-index: 100;
 }
 .aside--title {
     font-size: large;
@@ -234,7 +237,7 @@ main {
         '. . copyrights';
     color: white;
     background-color: hsl(192, 100%, 9%);
-    height: 50vh;
+    height: 400px;
     padding-left: 5rem;
 }
 .footer__logo {
@@ -245,6 +248,7 @@ main {
 .footer__contacts {
     grid-area: contacts;
     padding-left: 3rem;
+    padding-block: 2rem;
     a {
         color: #ffffff;
     }
@@ -277,15 +281,24 @@ main {
 }
 .footer__social {
     grid-area: social;
+    display: flex;
+    justify-content: space-evenly;
 }
-.footer__social__facebook {
+
+.footer__social a {
+    display: flex;
+    flex-direction: row;
     border: 1px solid white;
     color: white;
     border-radius: 10rem;
-    text-align: center;
-    align-self: center;
-    position: relative;
+    align-items: center;
+    justify-content: center;
     width: 2rem;
+    height: 2rem;
+}
+.footer__social a:hover {
+    border: 1px solid fuchsia;
+    color: fuchsia;
 }
 .footer__copyrights {
     grid-area: copyrights;
