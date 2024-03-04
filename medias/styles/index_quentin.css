@@ -1,116 +1,9 @@
 /* Style Guide________________________________________________________ */
-* {
-    padding: 0;
-    margin: 0;
-    font-weight: 400;
-    text-decoration: none;
-}
-html {
-    font-size: 18px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 600;
-    font-family: Poppins;
-}
-a {
-    font-weight: 700;
-}
+
 /* Header____________________________________________________________ */
-body {
-    background-image: url(../img/bg_hero_desktop.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-    /* padding: 50px; a changer */
-}
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding-inline: -5rem;
-    margin: 30px;
-}
-.header__logo {
-    height: 1rem;
-}
-.header__button {
-    padding: 0.4rem;
-    padding-inline: 2rem;
-    background-color: white;
-    color: black;
-    width: 150px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 1rem;
-    box-shadow: 29px 29px 58px #b8b8b8, -29px -29px 58px #ffffff;
-}
 
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 3rem;
-  padding-block: 0.7rem;
-}
-.header__logo {
-  height: 1rem;
-}
-.header__button {
-  padding: 0.4rem;
-  padding-inline: 2rem;
-  border-radius: 1rem;
-  background-color: red;
-} */
 /* Main_____________________________________________________________ */
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
-.main__firstParagraph__title {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
-    font-size: xx-large;
-    margin-top: 60px;
-}
-.main__firstParagraph__paragraph {
-    margin: 10px;
-}
-.main__firstParagraph__bouton {
-    display: inline-block;
-    width: 180px;
-    height: 30px;
-    background-color: fuchsia;
-    color: white;
-    border: 1px solid fuchsia;
-    border-radius: 25px;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 24px;
-    margin-left: 4px;
-}
-.main__illustration {
-    width: 48vw;
-}
-/* .main {
-  background-image: url(../img/bg_hero_desktop.svg);
-  background-position-y: -2rem;
-  display: flex;
-  padding-inline: 2rem;
-}
-.main__firstParagraph {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.main__illustration {
-  width: 60vw;
-} */
 /* Section________________________________________________________ */
 .section {
     display: flex;
@@ -139,10 +32,12 @@ main {
 }
 .section__first--block__paragraph {
     grid-area: content;
+    margin-top: 1.5rem;
+    color: hsl(208, 11%, 55%);
 }
 .section__first--block__illustration {
     grid-area: image;
-    height: 50vh;
+    height: 300px;
 }
 
 /* Section__second block */
@@ -165,10 +60,12 @@ main {
 }
 .section__second--block__paragraph {
     grid-area: content;
+    margin-top: 1.5rem;
+    color: hsl(208, 11%, 55%);
 }
 .section__second--block__illustration {
     grid-area: image;
-    height: 50vh;
+    height: 300px;
     padding-right: 6vw;
 }
 
@@ -192,10 +89,12 @@ main {
 }
 .section__third--block__paragraph {
     grid-area: content;
+    margin-top: 1.5rem;
+    color: hsl(208, 11%, 55%);
 }
 .section__third--block__illustration {
     grid-area: image;
-    height: 50vh;
+    height: 300px;
 }
 
 /* Aside_____________________________________________________ */
@@ -216,6 +115,7 @@ main {
 }
 .aside--title {
     font-size: large;
+    justify-self: center;
 }
 .aside__button {
     background-color: fuchsia;
@@ -229,7 +129,7 @@ main {
 .footer {
     display: grid;
     position: relative;
-    grid-template-columns: 4fr 4fr 2fr;
+    grid-template-columns: 4fr 4fr 3fr;
     grid-template-rows: 5fr 3fr 2fr;
     grid-auto-flow: column;
     grid-template-areas:
@@ -243,7 +143,7 @@ main {
 }
 .footer__logo {
     grid-area: logo;
-    align-self: center;
+    align-self: end;
     height: 3rem;
 }
 .footer__contacts {
@@ -283,7 +183,8 @@ main {
 .footer__social {
     grid-area: social;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__social a {
@@ -296,6 +197,7 @@ main {
     justify-content: center;
     width: 2rem;
     height: 2rem;
+    margin-inline: 0.5rem;
 }
 .footer__social a:hover {
     border: 1px solid fuchsia;
