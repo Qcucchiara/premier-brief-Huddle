@@ -1,10 +1,10 @@
 /* Style Guide________________________________________________________ */
 
-/* Header____________________________________________________________ */
+/* Header_____________________________________________________________ */
 
-/* Main_____________________________________________________________ */
+/* Main_______________________________________________________________ */
 
-/* Section________________________________________________________ */
+/* Section____________________________________________________________ */
 .section {
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@
     padding: 2rem;
     padding-left: 6vw;
     margin: 2rem;
+    padding-inline: 5%;
 }
 .section__first--block__title {
     grid-area: titre;
@@ -97,35 +98,40 @@
     height: 300px;
 }
 
-/* Aside_____________________________________________________ */
+/* Aside______________________________________________________________*/
 .aside {
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 40%;
+    width: 600px;
     height: 10rem;
-    margin-inline: 30vw;
     align-items: center;
     justify-content: space-around;
+    align-items: center;
     border-radius: 0.8rem;
     box-shadow: 0 0 20px -15px;
     position: relative;
     top: 5rem;
     z-index: 100;
+    margin: auto;
 }
 .aside--title {
     font-size: large;
     justify-self: center;
 }
 .aside__button {
-    background-color: fuchsia;
+    background-color: hsl(322, 100%, 66%);
     padding: 0.8rem;
     padding-inline: 2.5rem;
     border-radius: 2rem;
     color: white;
 }
+.aside__button:hover {
+    background-color: hsl(322, 100%, 78%);
+    transition: 1s cubic-bezier(0, 1, 0.5, 1);
+}
 
-/* footer____________________________________________________ */
+/* footer_____________________________________________________________ */
 .footer {
     display: grid;
     position: relative;
@@ -139,12 +145,15 @@
     color: white;
     background-color: hsl(192, 100%, 9%);
     height: 400px;
-    padding-left: 5rem;
+    padding-left: 5%;
+    * {
+        font-weight: 400;
+    }
 }
 .footer__logo {
     grid-area: logo;
     align-self: end;
-    height: 3rem;
+    height: 2rem;
 }
 .footer__contacts {
     grid-area: contacts;
@@ -168,8 +177,11 @@
 }
 .footer__nav {
     grid-area: nav;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-evenly;
     a {
         color: #ffffff;
     }
@@ -179,11 +191,11 @@
 }
 .footer__nav li {
     list-style: none;
+    height: 40px;
 }
 .footer__social {
     grid-area: social;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -200,8 +212,9 @@
     margin-inline: 0.5rem;
 }
 .footer__social a:hover {
-    border: 1px solid fuchsia;
-    color: fuchsia;
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    transition: 1s cubic-bezier(0, 1, 0.5, 1);
 }
 .footer__copyrights {
     grid-area: copyrights;
