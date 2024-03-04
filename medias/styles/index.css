@@ -26,15 +26,17 @@ body {
     background-image: url(../img/bg_hero_desktop.svg);
     background-repeat: no-repeat;
     background-position: top;
+    z-index: -2;
+    margin: 30px;
 }
 .header {
     display: flex;
     justify-content: space-between;
-    padding-inline: -5rem;
-    margin: 30px;
+    margin: 18px;
+    padding: 38px 10px;
 }
 .header__logo {
-    height: 1rem;
+    height: 40px;
 }
 .header__button {
     padding: 0.4rem;
@@ -44,73 +46,47 @@ body {
     width: 150px;
     height: 30px;
     text-align: center;
-    text-decoration: none;
-    border-radius: 1rem;
+
+    border-radius: 44px;
     box-shadow: 29px 29px 58px #b8b8b8, -29px -29px 58px #ffffff;
 }
 
-/* .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 3rem;
-  padding-block: 0.7rem;
-}
-.header__logo {
-  height: 1rem;
-}
-.header__button {
-  padding: 0.4rem;
-  padding-inline: 2rem;
-  border-radius: 1rem;
-  background-color: red;
-} */
 /* Main_____________________________________________________________ */
 main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 40px;
 }
 
 .main__firstParagraph__title {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
-    font-size: xx-large;
+    font-family: poppins;
+    font-size: 50px;
     margin-top: 60px;
+    margin-bottom: 30px;
 }
 .main__firstParagraph__paragraph {
-    margin: 10px;
+    margin: 5px;
+    padding-left: 0;
+    padding-bottom: 40px;
+    padding-right: 50px;
 }
 .main__firstParagraph__bouton {
     display: inline-block;
+    padding: 15px 50px;
     width: 180px;
     height: 30px;
-    background-color: fuchsia;
+    background-color: rgb(255, 7, 222);
     color: white;
-    border: 1px solid fuchsia;
-    border-radius: 25px;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 24px;
-    margin-left: 4px;
+    border: 1px solid rgb(255, 7, 222);
+    border-radius: 30px;
+    margin-left: 2px;
+    margin-top: 10px;
 }
 .main__illustration {
     width: 48vw;
 }
-/* .main {
-  background-image: url(../img/bg_hero_desktop.svg);
-  background-position-y: -2rem;
-  display: flex;
-  padding-inline: 2rem;
-}
-.main__firstParagraph {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.main__illustration {
-  width: 60vw;
-} */
+
 /* Section________________________________________________________ */
 
 /* Aside_____________________________________________________ */
