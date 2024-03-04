@@ -1,8 +1,26 @@
 /* pour les écrans d'une largeur inférieur à 1440px
 (tablettes) */
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 1440px) {
+    /* header_____________________________________ */
+
+    /* main_______________________________________ */
+
+    /* section____________________________________ */
+
+    /* aside______________________________________ */
+
+    /* footer_____________________________________ */
 }
 /* pour les écrans d'une largeur inférieur à 375px
 (téléphone vertical) */
 @media only screen and (max-width: 375px) {
+    /* header_____________________________________ */
+
+    /* main_______________________________________ */
+
+    /* section____________________________________ */
+
+    /* aside______________________________________ */
+
+    /* footer_____________________________________ */
 }
