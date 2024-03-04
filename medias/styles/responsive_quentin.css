@@ -18,7 +18,30 @@
     /* main_______________________________________ */
 
     /* section____________________________________ */
-
+    .section__first--block {
+        grid-template-rows: 4fr 2fr 4fr;
+        grid-template-areas:
+            'image image'
+            'titre titre'
+            'content content';
+        height: 110vw;
+    }
+    .section__second--block {
+        grid-template-rows: 4fr 2fr 4fr;
+        grid-template-areas:
+            'image image'
+            'titre titre'
+            'content content';
+        height: 110vw;
+    }
+    .section__third--block {
+        grid-template-rows: 4fr 2fr 4fr;
+        grid-template-areas:
+            'image image'
+            'titre titre'
+            'content content';
+        height: 110vw;
+    }
     /* aside______________________________________ */
 
     /* footer_____________________________________ */
