@@ -112,7 +112,7 @@
     width: 600px;
     height: 10rem;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 0.8rem;
     box-shadow: 0 0 20px -15px;
