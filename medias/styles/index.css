@@ -27,12 +27,14 @@ a {
 
 /* Header____________________________________________________________ */
 
-.header {
+/* .header {
     display: flex;
     justify-content: space-between;
     background-color: hsl(193, 100%, 96%);
     background-image: url(/medias/img/bg_hero_desktop.svg);
-    padding: 60px;
+    padding-inline: 8vw;
+    padding-top: 2.2rem;
+
 
 
 }
@@ -51,16 +53,97 @@ a {
     text-align: center;
     border-radius: 44px;
     box-shadow: 29px 29px 58px #b8b8b8, -29px -29px 58px #ffffff;
+} */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(../img/bg_hero_desktop.svg);
+    padding-inline: 4vw;
+    padding-top: 2rem;
+    /* width: 120vh; */
+}
+
+.header__button {
+    background-color: white;
+    color: black;
+    width: 16vw;
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header__logo {
+
+    width: 16vw;
 }
 
 /* Main_____________________________________________________________ */
+
+
+
 main {
+    display: flex;
+    padding-inline: 6vw;
+
+    justify-content: space-between;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(../img/bg_hero_desktop.svg);
+    /* padding: 30px; */
+    /* width: 45%; */
+    /* width: 130vh; */
+}
+
+
+
+.main__firstParagraph {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.main__firstParagraph__title {
+    font-family: poppins;
+    font-size: 50px;
+
+}
+
+
+
+.main__firstParagraph__bouton {
+    /* display: flex; */
+    justify-content: center;
+    grid-area: button;
+    padding: 15px 50px;
+    width: 250px;
+    height: 30px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border-radius: 30px;
+}
+
+.main__div--image {
+    width: 45%;
+}
+
+.main__div--image__illustration {
+    width: 100%;
+    /* height: auto; */
+    /* padding-inline: 10px; */
+    */
+}
+
+/* main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: hsl(193, 100%, 96%);
     background-image: url(/medias/img/bg_hero_desktop.svg);
     padding: 60px;
+
 }
 
 .main__firstParagraph__title {
@@ -91,8 +174,9 @@ main {
 }
 
 .main__illustration {
-    width: 50vw;
-}
+    width: 640px;
+    height: auto;
+} */
 
 /* Section________________________________________________________ */
 
