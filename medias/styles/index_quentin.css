@@ -32,15 +32,18 @@ body {
     margin: 2rem;
     /* padding-inline: 5%; */
 }
+
 .section__first--block__title {
     grid-area: titre;
     align-self: end;
 }
+
 .section__first--block__paragraph {
     grid-area: content;
     margin-top: 1.5rem;
     color: hsl(208, 11%, 55%);
 }
+
 .section__first--block__illustration {
     grid-area: image;
     /* height: 300px; */
@@ -62,15 +65,18 @@ body {
     padding-left: 6vw;
     margin: 2rem;
 }
+
 .section__second--block__title {
     grid-area: titre;
     align-self: end;
 }
+
 .section__second--block__paragraph {
     grid-area: content;
     margin-top: 1.5rem;
     color: hsl(208, 11%, 55%);
 }
+
 .section__second--block__illustration {
     grid-area: image;
     /* height: 300px; */
@@ -93,15 +99,18 @@ body {
     padding-left: 6vw;
     margin: 2rem;
 }
+
 .section__third--block__title {
     grid-area: titre;
     align-self: end;
 }
+
 .section__third--block__paragraph {
     grid-area: content;
     margin-top: 1.5rem;
     color: hsl(208, 11%, 55%);
 }
+
 .section__third--block__illustration {
     grid-area: image;
     /* height: 300px; */
@@ -125,10 +134,12 @@ body {
     z-index: 100;
     margin: auto;
 }
+
 .aside--title {
     font-size: large;
     justify-self: center;
 }
+
 .aside__button {
     background-color: hsl(322, 100%, 66%);
     padding: 0.8rem;
@@ -136,6 +147,7 @@ body {
     border-radius: 2rem;
     color: white;
 }
+
 .aside__button:hover {
     background-color: hsl(322, 100%, 78%);
     transition: 1s cubic-bezier(0, 1, 0.5, 1);
@@ -156,35 +168,44 @@ body {
     background-color: hsl(192, 100%, 9%);
     height: 400px;
     padding-left: 5%;
+
     * {
         font-weight: 400;
     }
 }
+
 .footer__logo {
     grid-area: logo;
     align-self: end;
     height: 2rem;
 }
+
 .footer__contacts {
     grid-area: contacts;
     padding-left: 3rem;
     padding-block: 2rem;
+
     a {
         color: #ffffff;
     }
+
     a:hover {
         text-decoration: underline;
     }
 }
+
 .footer__contacts__adress {
     list-style: url(../img/icon_location.svg);
 }
+
 .footer__contacts__telephone {
     list-style: url(../img/icon_phone.svg);
 }
+
 .footer__contacts__mail {
     list-style: url(../img/icon_email.svg);
 }
+
 .footer__nav {
     grid-area: nav;
     display: flex;
@@ -192,17 +213,21 @@ body {
     flex-direction: column;
     height: 120px;
     justify-content: space-evenly;
+
     a {
         color: #ffffff;
     }
+
     a:hover {
         text-decoration: underline;
     }
 }
+
 .footer__nav li {
     list-style: none;
     height: 40px;
 }
+
 .footer__social {
     grid-area: social;
     display: flex;
@@ -221,11 +246,13 @@ body {
     height: 2rem;
     margin-inline: 0.5rem;
 }
+
 .footer__social a:hover {
     border: 1px solid hsl(322, 100%, 66%);
     color: hsl(322, 100%, 66%);
     transition: 1s cubic-bezier(0, 1, 0.5, 1);
 }
+
 .footer__copyrights {
     grid-area: copyrights;
     display: flex;
