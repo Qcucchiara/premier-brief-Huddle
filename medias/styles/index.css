@@ -30,11 +30,11 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: hsl(193, 100%, 96%);
-    background-image: url(/medias/img/bg_hero_desktop.svg);
+    /* background-color: hsl(193, 100%, 96%); */
+    background-image: url(../medias/img/bg_hero_desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
     padding: 60px;
-
-
 }
 
 .header__logo {
@@ -58,7 +58,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: hsl(193, 100%, 96%);
+    /* background-color: hsl(193, 100%, 96%); */
     background-image: url(/medias/img/bg_hero_desktop.svg);
     padding: 60px;
 }
@@ -67,15 +67,12 @@ main {
     font-family: poppins;
     font-size: 50px;
     margin-top: 50px;
-
 }
 
 .main__firstParagraph__paragraph {
     font-size: 25px;
     padding: 35px 0;
     margin-bottom: 20px;
-
-
 }
 
 .main__firstParagraph__bouton {
@@ -87,7 +84,6 @@ main {
     background-color: hsl(322, 100%, 66%);
     color: white;
     border-radius: 30px;
-
 }
 
 .main__illustration {
