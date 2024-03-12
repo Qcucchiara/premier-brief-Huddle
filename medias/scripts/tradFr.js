@@ -10,3 +10,5 @@ title1.innerText = 'Construisez une communauté que vos fans adorerons'
 firstParagraph.innerText =
     'Huddle réinvente la façon dont nous construisons des communautés. Vous avez une voix, mais votre public aussi. Créez des liens avec vos utilisateurs en engageant une véritable discussion.'
 firstButton.innerText = 'Commencer Gratuitement'
+
+// manque la fin, je l'ai pas terminé principalement parce que c'était redondant.

@@ -1,10 +1,34 @@
 /* pour les écrans d'une largeur inférieur à 1440px
 (tablettes) */
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1050px) {
     /* header_____________________________________ */
 
     /* main_______________________________________ */
-
+    .main {
+        display: block;
+    }
+    .main__firstParagraph {
+        align-items: center;
+        padding-bottom: 20px;
+        width: auto;
+    }
+    .main__firstParagraph__title {
+        text-align: center;
+        min-width: 0;
+    }
+    .main__firstParagraph__paragraph {
+        text-align: center;
+    }
+    .main__firstParagraph__bouton {
+        text-align: center;
+    }
+    .main__div--image {
+        justify-content: center;
+    }
+    .main__div--image__illustration {
+        max-height: 50vh;
+        width: auto;
+    }
     /* section____________________________________ */
 
     /* aside______________________________________ */
@@ -14,90 +38,15 @@
 
 /* pour les écrans d'une largeur inférieur à 375px
 (téléphone vertical) */
-@media only screen and (max-width: 375px) {
-
+@media only screen and (max-width: 480px) {
     /* header_____________________________________ */
 
-    body {
-        background-image: url(medias/img/bg_hero_mobile.svg);
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        background-color: hsl(193, 100%, 96%);
-        background-image: url(/medias/img/bg_hero_desktop.svg);
-        padding: 20px;
-
-
-    }
-
-    .header__logo {
-        padding: 10px;
-        height: 15px;
-    }
-
-    .header__button {
-        padding: 0.3rem;
-        font-size: 10px;
-        padding-inline: 1.2rem;
-        background-color: white;
-        color: black;
-        width: 60px;
-        height: 15px;
-        text-align: center;
-        border-radius: 44px;
-        box-shadow: 29px 29px 58px #b8b8b8, -29px -29px 58px #ffffff;
-    }
-
     /* Main_____________________________________________________________ */
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content: space-evenly;
-        background-color: hsl(193, 100%, 96%);
-        background-image: url(/medias/img/bg_hero_desktop.svg); */
-        padding: 30px;
-    }
-
-    .main__firstParagraph__title {
-        font-family: poppins;
-        text-align: center;
-        font-size: 25px;
-        margin-top: 20px;
-
-    }
-
-    .main__firstParagraph__paragraph {
-        font-size: 16px;
-        /* padding: 15px 0; */
-        /* margin-bottom: 15px; */
-        text-align: center;
-        margin: auto 5px;
-
-
-    }
-
-    .main__firstParagraph__bouton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 30px;
-        width: 200px;
-        height: 30px;
-        margin: 15px auto;
-        background-color: hsl(322, 100%, 66%);
-        color: white;
-        border-radius: 30px;
-        font-size: 16px;
-
-    }
-
-    .main__illustration {
-        width: 90%;
+    .main__div--image__illustration {
+        align-self: center;
+        height: 70vw;
         margin-top: 30px;
+        width: auto;
     }
 
     /* section____________________________________ */

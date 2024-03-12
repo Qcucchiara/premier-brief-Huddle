@@ -27,14 +27,15 @@ a {
 
 /* Header____________________________________________________________ */
 
-.header {
+/* .header {
     display: flex;
     justify-content: space-between;
-    /* background-color: hsl(193, 100%, 96%); */
-    background-image: url(../medias/img/bg_hero_desktop.svg);
-    background-repeat: no-repeat;
-    background-position: 0% 0%;
-    padding: 60px;
+
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(/medias/img/bg_hero_desktop.svg);
+    padding-inline: 8vw;
+    padding-top: 2.2rem;
+
 }
 
 .header__logo {
@@ -51,17 +52,98 @@ a {
     text-align: center;
     border-radius: 44px;
     box-shadow: 29px 29px 58px #b8b8b8, -29px -29px 58px #ffffff;
+} */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(../img/bg_hero_desktop.svg);
+    padding-inline: 4vw;
+    padding-top: 2rem;
+    /* width: 120vh; */
+}
+
+.header__button {
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px -15px;
+}
+
+.header__logo {
+    height: 1.5rem;
 }
 
 /* Main_____________________________________________________________ */
+
 main {
+    display: flex;
+    padding-inline: 6vw;
+    padding-block: 30px;
+    justify-content: space-between;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(../img/bg_hero_desktop.svg);
+    /* padding: 30px; */
+    /* width: 45%; */
+    /* width: 130vh; */
+    padding-bottom: 80px;
+}
+
+.main__firstParagraph {
+    width: 800px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.main__firstParagraph__title {
+    font-family: poppins;
+    font-size: 50px;
+    min-width: 550px;
+}
+
+.main__firstParagraph__bouton {
+    /* display: flex; */
+    justify-content: center;
+    grid-area: button;
+    padding: 15px 50px;
+    /* width: 200px; */
+    height: 30px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main__firstParagraph__bouton:hover {
+    background-color: hsl(322, 100%, 78%);
+}
+
+.main__div--image {
+    display: flex;
+    width: auto;
+    min-width: 400px;
+    align-items: center;
+}
+
+.main__div--image__illustration {
+    width: 100%;
+    /* height: auto; */
+    /* padding-inline: 10px; */
+}
+
+/* main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     /* background-color: hsl(193, 100%, 96%); */
-    background-image: url(/medias/img/bg_hero_desktop.svg);
+/* background-image: url(/medias/img/bg_hero_desktop.svg);
     padding: 60px;
-}
+
+} */
 
 .main__firstParagraph__title {
     font-family: poppins;
@@ -77,6 +159,7 @@ main {
 
 .main__firstParagraph__bouton {
     display: flex;
+    margin-inline: auto;
     justify-content: center;
     padding: 15px 50px;
     width: 250px;
@@ -87,7 +170,8 @@ main {
 }
 
 .main__illustration {
-    width: 50vw;
+    width: 640px;
+    height: auto;
 }
 
 /* Section________________________________________________________ */
